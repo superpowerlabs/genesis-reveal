@@ -1,0 +1,7 @@
+/tmp
+
+node_modules
+.env
+.env.*
+
+temp.js
