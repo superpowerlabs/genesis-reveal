@@ -20,7 +20,7 @@ Byte City Oracle tokens are robots built using one head, one torso, one arms and
 When the genesis body parts have been distributed
 
 1. Unveil the **shuffle.js** script 
-5. Commit and push to GitHub
+2. Commit and push to GitHub
 
 ### Stage #3
 
