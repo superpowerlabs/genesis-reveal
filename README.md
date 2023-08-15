@@ -19,9 +19,14 @@ Byte City Oracle tokens are robots built using one head, one torso, one arms and
 
 When the genesis body parts have been distributed
 
-1. Find the block minted closest to 12pm PST (if there are two at the same distance, let's say, one 2 seconds before 12pm and one 2 seconds later, we will take the first).
+1. Unveil the **shuffle.js** script 
+5. Commit and push to GitHub
+
+### Stage #3
+
+1. Wait for the block minted closest to 12pm PST (if there are two at the same distance, let's say, one 2 seconds before 12pm and one 2 seconds later, we will take the first).
 2. Put the block's hash in **input/block-for-shuffle.json**.
-3. Unveil the **shuffle.js** script and launch it to use the block's hash to generate **result/final-metadata.json** containing the final genesis' metadata.
+3. Launch **shuffle.js** to use the block's hash to generate **result/final-metadata.json** containing the final genesis' metadata.
 4. Update the BCFactory smart contract with the final metadata. 
 5. Commit and push to GitHub
 
