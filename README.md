@@ -10,25 +10,33 @@ Byte City Oracle tokens are robots built using one head, one torso, one arms and
 
 ## The flow
 
-### Stage #1
+### Stage 1 - Reference Metadata
 
-1. Put the reference body parts metadata in **input/genesis-reference-metadata.json**. 
-2. Commit and push to GitHub
+- Add reference body part metadata to `input/genesis-reference-metadata.json`
+- Commit and push to GitHub
 
-### Stage #2
+On August 23rd at 6am PST starts the minting. 
 
-When the genesis body parts have been distributed
+- For the first 4 hours, only guaranteed allowlist wallets can mint.
+- For the next 4 hours, any allowlist wallets can mint.
+- After 8 hours, minting opens to everyone.
 
-1. Unveil the **shuffle.js** script 
-2. Commit and push to GitHub
+### Stage 2 - Reveal Shuffle Script
+After genesis body parts are distributed:
 
-### Stage #3
+- Unveil `shuffle.js` script 
+- Commit and push to GitHub
 
-1. Wait for the block minted closest to 12pm PST (if there are two at the same distance, let's say, one 2 seconds before 12pm and one 2 seconds later, we will take the first).
-2. Put the block's hash in **input/block-for-shuffle.json**.
-3. Launch **shuffle.js** to use the block's hash to generate **result/final-metadata.json** containing the final genesis' metadata.
-4. Update the BCFactory smart contract with the final metadata. 
-5. Commit and push to GitHub
+### Stage 3 - Final Metadata
+On August 25th at 9am PST:
+
+- Note block hash mined closest to 9am PST (use first if two are equidistant)
+- Add block hash to `input/block-for-shuffle.json`
+- Run shuffle.js to generate `result/final-metadata.json`
+- Commit and push to GitHub
+
+The metadata will then be rapidly propagated to the API and factory contract.
+ 
 
 ## Status
 
