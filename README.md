@@ -40,7 +40,7 @@ The metadata will then be rapidly propagated to the API and factory contract.
 
 ## Status
 
-Current Stage: 1
+Current Stage: 2
 
 ### Credits
 
